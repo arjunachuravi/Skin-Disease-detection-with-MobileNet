@@ -60,18 +60,18 @@ def loadImages(path):
 ###################################################
 
 
-x = loadImages("ring.jpeg")
+# x = loadImages("ring.jpeg")
 
-print(class_labels[x[0]])
+# print(class_labels[x[0]])
 
-x = loadImages("measles.jpg")
+# x = loadImages("measles.jpg")
 
-print(class_labels[x[0]])
+# print(class_labels[x[0]])
 
-x = loadImages("melanoma.jpg")
+# x = loadImages("melanoma.jpg")
 
-print(class_labels[x[0]])
+# print(class_labels[x[0]])
 
-x = loadImages("psoriasis.jpeg")
+# x = loadImages("psoriasis.jpeg")
 
-print(class_labels[x[0]])
+# print(class_labels[x[0]])

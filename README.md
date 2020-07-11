@@ -8,3 +8,6 @@ Uses mobilenet to classify 4 classes of skin diseases - Ringworm , Psoriasis , M
 
 ## Reference
 [Kaggle kernel by Marsh](https://www.kaggle.com/vbookshelf/skin-lesion-analyzer-tensorflow-js-web-app)
+
+## Usage
+python predictor.py -i <filename-goes-here>

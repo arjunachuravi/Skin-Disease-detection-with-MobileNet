@@ -9,7 +9,7 @@ tf.get_logger().setLevel('ERROR')
 tf.get_logger().warning('test')
 ###################################################
 
-
+import sys,getopt
 import tensorflow
 import numpy as np
 from tensorflow.keras.models import Model
@@ -47,6 +47,24 @@ model.load_weights('model.h5')
 
 class_labels = ["psoriasis","measles","melanoma","ringworm"]
 
+####################################################
+
+inputfile = 'index.jpeg'
+#try:
+      #opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+   #except getopt.GetoptError:
+      #print 'test.py -i <inputfile> -o <outputfile>'
+      #sys.exit(2)
+opts, args = getopt.getopt(sys.argv[1:],"hi:o:",["ifile="])
+for opt, arg in opts:
+    if opt == '-h':
+        sys.exit()
+    elif opt in ("-i", "--ifile"):
+        inputfile = arg
+    #elif opt in ("-o", "--ofile"):
+        #outputfile = arg
+####################################################
+
 def loadImages(path):
   img = image.load_img(path,target_size=(224, 224))
   img_data = image.img_to_array(img)
@@ -60,18 +78,6 @@ def loadImages(path):
 ###################################################
 
 
-# x = loadImages("ring.jpeg")
+x = loadImages(inputfile)
 
-# print(class_labels[x[0]])
-
-# x = loadImages("measles.jpg")
-
-# print(class_labels[x[0]])
-
-# x = loadImages("melanoma.jpg")
-
-# print(class_labels[x[0]])
-
-# x = loadImages("psoriasis.jpeg")
-
-# print(class_labels[x[0]])
+print(class_labels[x[0]])

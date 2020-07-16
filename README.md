@@ -2,7 +2,7 @@
 Uses mobilenet to classify 4 classes of skin diseases - Ringworm , Psoriasis , Melanoma , Measles
 + Please go through the kaggle kernel and pdf in the repo to have more insight on data and class labels
 
-![alt text](https://https://github.com/arjunachuravi/Skin-Disease---DeepLearning/blob/master/screenshot.jpg?raw=true)
+![screenshot](https://github.com/arjunachuravi/Skin-Disease---DeepLearning/blob/master/screenshot.jpg?raw=true)
 
 
 ## Data

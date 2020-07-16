@@ -11,5 +11,6 @@ Uses mobilenet to classify 4 classes of skin diseases - Ringworm , Psoriasis , M
 
 ## Usage
 ```bash
-python predictor.py -i <filename-goes-here>
+python gui2.py  ................................for GUI
+python predictor.py -i <filename-goes-here>.....for CLI
 ```

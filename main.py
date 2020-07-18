@@ -1,4 +1,3 @@
-import os
 import tensorflow
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
@@ -22,16 +21,6 @@ def top_2_accuracy(y_true, y_pred):
 train_path                  = 'train'
 valid_path                  = 'val'
 test_path                   = 'test'
-
-# num_train_samples           = ( len(os.listdir(train_path+'/'+"measles")) + 
-#                               len(os.listdir(train_path+'/'+"melanoma")) + 
-#                               len(os.listdir(train_path+'/'+"Psoriasis")) + 
-#                               len(os.listdir(train_path+'/'+"ringworm")) )
-
-# num_val_samples             = ( len(os.listdir(test_path+'/'+"measles")) + 
-#                               len(os.listdir(test_path+'/'+"melanoma")) + 
-#                               len(os.listdir(test_path+'/'+"Psoriasis")) + 
-#                               len(os.listdir(test_path+'/'+"ringworm"))  )
 
 
 # DIMENSION OF IMAGE 
